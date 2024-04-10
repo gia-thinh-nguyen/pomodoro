@@ -1,0 +1,85 @@
+.session-display,.break-display{
+  display:flex;
+  flex-direction: row;
+  gap:5px;
+  justify-content: center;
+  
+}
+
+.bs{
+  display:flex;
+  flex-direction: row;
+  gap:100px;
+  
+}
+.b,.s{
+  background-color: rgba(243, 151, 151, 0.87);
+  
+  border-radius: 5px;
+  padding:10px 20px;
+  text-align: center;
+  font-size: 20px;
+  width:150px;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.timer{
+  border:5px solid white;
+  margin:40px;
+  margin-bottom:20px;
+  text-align: center;
+  width:200px;
+  padding:0px 50px;
+  border-radius: 10px;
+  font-size: 250%;
+  height:160px;
+}
+
+#time-left{
+  font-size: 75px;
+  position: relative;
+  top: -20px;
+}
+
+label{
+  font-size: 30px;
+}
+
+.st{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: center;
+}
+
+button{
+  background:none;
+  color:white;
+  cursor: pointer;
+  border:none;
+  font-size:35px;
+  
+}
+#session-length,#break-length{
+  padding:5px;
+}
+
+body{
+  min-height:100vh;
+  margin:0;
+  background-color: #D05353;
+}
+
+.btnwhenbreak{
+  background-color: #4c78a7;
+}
