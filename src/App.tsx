@@ -1,8 +1,9 @@
 import "./App.css";
 import { useState, useEffect, useRef } from "react";
 import doorbell from './mixkit-home-standard-ding-dong-109.wav'
-import { FaArrowDown,FaArrowUp } from "react-icons/fa6";
-
+import { FaArrowDown,FaArrowUp,FaPause,FaPlay } from "react-icons/fa";
+import { BsFillSkipEndFill } from "react-icons/bs";
+import { LuTimerReset } from "react-icons/lu";
 interface ClockProps {
   curr: number;
 }
@@ -185,9 +186,9 @@ function App() {
         <Clock curr={time} />
         <audio id="beep" src={doorbell}></audio>
         <div className="st">
-          <button id="start_stop" onClick={startStop}>{isActive ? "Pause" : "Start"}</button>
-          <button id="skip" onClick={skip}>Skip</button>
-          <button id="reset" onClick={reset}>Reset</button>
+          <button id="start_stop" onClick={startStop}>{isActive ? <FaPause/> : <FaPlay/>}</button>
+          <button id="skip" onClick={skip}><BsFillSkipEndFill/></button>
+          <button id="reset" onClick={reset}><LuTimerReset /></button>
         </div>
       </div>
     </div>

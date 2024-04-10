@@ -83,3 +83,9 @@ body{
 .btnwhenbreak{
   background-color: #4c78a7;
 }
+#skip,#reset{
+  font-size: 40px;
+}
+#start_stop{
+  font-size:80%;
+}
